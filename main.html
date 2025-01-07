@@ -11,7 +11,7 @@
     <script type="text/javascript" src="./script.js">
 </script>
 
-	<form>
+	<form action="/submit" method="post">
 
 	<label for="name">Name</lable>
 	<input type="text" required id="name" placeholder="Name"><br>
@@ -19,18 +19,19 @@
 	<label for="email">Email</lable>
 	<input type="email" required id="email" placeholder="Email" required>
 
-	Gender<br>
+	<h3>Gender</h3>
 	<label for="gender_m">Male</label>
 	<input type="radio" required id="gender_m" name="gender" required>
 	<label for="gender_f">Female</label>
 	<input type="radio" required id="gender_f" name="gender" required><br>
 
-	  <label for="cars">Car Brands</label>
-            <select name="car brands">
-                <option value="bmw" id="cars">Bmw</option>
-                <option value="audi" id="cars">Audi</option>
-                <option value="ferrari" id="cars">Ferrari</option>
-                <option value="jaguar" id="cars">Jaguar</option>
+	  <h3>Car Brands</h3>
+            <select id="cars">
+				<option>--Please choose an option--</option>
+                <option>Bmw</option>
+                <option>Audi</option>
+                <option>Ferrari</option>
+                <option>Jaguar</option>
             </select><br>
 
 		 <label for="age">Age</label>
@@ -41,17 +42,17 @@
 
 		
 		 <label for="phone">Phone Number</label>
-		 <input type="tel" id="tel" placeholder="xxx-xxx-xxxx"><br>
+		 <input type="number" id="tel" placeholder="xxx-xxx-xxxx"><br>
 
-		 <label for="pass">Password</label>
+		 <label for="password">Password</label>
 		 <input type="password" required id="password" placeholder="Password"><br>	
 
 		 
-	
-		<input type="checkbox" id="cb">
-		<lable for="cb">I agree to the TOS</lable><br>
+	    <lable for="tos">I agree to the TOS</lable>
+		<input type="checkbox" id="tos" required><br>
+		
 
-		<button>Submit</button>
+		<button type="submit">Submit</button>
 
 	</form>
 
